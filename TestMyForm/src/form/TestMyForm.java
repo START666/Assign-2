@@ -4,11 +4,10 @@ package form;
  * This is a test of Assignment #2 of COSC 2P05
  * Created by START_Eric on 16/2/25.
  */
+import form.CheckedForm.Type;
 public class TestMyForm {
     public static void main(String[] args){new TestMyForm();}
     public TestMyForm(){
-
-        System.out.println("Hello Git");
 
         CheckedForm form = new CheckedForm();
         form.addField("date","Date: ",Type.DATE);
