@@ -221,6 +221,12 @@ public class CheckedForm extends BasicForm{
     private boolean nameFound;
     private boolean typeChecked;
 
+    /**
+     * Check whether the name and type pair exists in the basic form
+     * @param name:
+     * @param type
+     * @return
+     */
     private boolean checkExists(String name,Type type) {    //this will set bool to nameFound, and typeChecked
         nameFound = false;
         typeChecked = false;   //initialization
