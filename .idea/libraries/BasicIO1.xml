@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BasicIO1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Forms/lib/BasicIO.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

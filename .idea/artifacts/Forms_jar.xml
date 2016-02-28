@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Forms:jar">
+    <output-path>$PROJECT_DIR$/out</output-path>
+    <root id="archive" name="Forms.jar">
+      <element id="module-output" name="Forms" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/Forms/lib/BasicIO.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

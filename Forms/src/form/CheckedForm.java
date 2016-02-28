@@ -15,21 +15,31 @@ import java.util.Locale;
  */
 public class CheckedForm extends BasicForm{
 
-    private final static Locale LOCALE = Locale.CANADA;   //set Locale to Canada
+    private BasicForm basic;
+    private ArrayList<Field> fieldList = new ArrayList<Field>();   //record name and Type pairs
+    private ArrayList<String> textList = new ArrayList<String>();   //record name of textList
+
+    private int numField=1;
+    private int line=0;
+
+    private Boolean nameFound;
+    private Boolean typeChecked;
 
     public CheckedForm(){
         basic = new BasicForm("OK","Quit");
+        Locale.setDefault(Locale.CANADA);   //set Default Locale to CANADA
     }    //constructor
 
     public enum Type {
 
-        DATE(new SimpleDateFormat("dd/MM/yy", LOCALE)),
-        TIME(new SimpleDateFormat("h:mm a", LOCALE)),
-        CURRENCY(NumberFormat.getCurrencyInstance(LOCALE)),
-        DECIMAL(NumberFormat.getInstance(LOCALE)),
-        INTEGER(NumberFormat.getIntegerInstance(LOCALE)),
-        PERCENT(NumberFormat.getPercentInstance(LOCALE)),
-        STRING(null);  //no need to check String Type
+        DATE(new SimpleDateFormat("MM/dd/yy")),
+        TIME(new SimpleDateFormat("h:mm a")),
+        CURRENCY(NumberFormat.getCurrencyInstance()),
+        DECIMAL(NumberFormat.getInstance()),
+        INTEGER(NumberFormat.getIntegerInstance()),
+        PERCENT(NumberFormat.getPercentInstance()),
+        STRING(null),  //no need to check String Type
+        TEXT(null);    //no need to check Text Area
 
         private Format format;
 
@@ -60,22 +70,12 @@ public class CheckedForm extends BasicForm{
         public String getName(){return name;}
     }
 
-    private BasicForm basic;
-    private ArrayList<Field> fieldList = new ArrayList<Field>();   //record name and Type pairs
-
-    /**
-     * numField and line are used to find the location of the field
-     */
-    private int numField=1;
-    private int line=0;
-
     @Override
     public int accept(){
         int button = basic.accept();
         if(button == 1) return 1;
         else{
             if(checkValidation()) {
-                basic.clearAll();
                 return button;
             }else return -1;
         }
@@ -84,6 +84,11 @@ public class CheckedForm extends BasicForm{
     @Override
     public void close(){
         basic.close();
+    }
+
+    @Override
+    public void clearAll(){
+        basic.clearAll();
     }
 
     /**
@@ -95,25 +100,25 @@ public class CheckedForm extends BasicForm{
     public void addField(String name, String label, Type kind){
         switch(kind){
             case DATE:
-                addEmptyField(name,label,Type.DATE);
+                addEmptyField(name,label, Type.DATE);
                 break;
             case TIME:
-                addEmptyField(name,label,Type.TIME);
+                addEmptyField(name,label, Type.TIME);
                 break;
             case CURRENCY:
-                addEmptyField(name,label,Type.CURRENCY);
+                addEmptyField(name,label, Type.CURRENCY);
                 break;
             case DECIMAL:
-                addEmptyField(name,label,Type.DECIMAL);
+                addEmptyField(name,label, Type.DECIMAL);
                 break;
             case INTEGER:
-                addEmptyField(name,label,Type.INTEGER);
+                addEmptyField(name,label, Type.INTEGER);
                 break;
             case PERCENT:
-                addEmptyField(name,label,Type.PERCENT);
+                addEmptyField(name,label, Type.PERCENT);
                 break;
             case STRING:
-                addEmptyField(name,label,Type.STRING);
+                addEmptyField(name,label, Type.STRING);
                 break;
             default:
                 break;
@@ -126,12 +131,69 @@ public class CheckedForm extends BasicForm{
      * @param label: label shown on the Text Area
      */
     public void addText(String name,String label){
-        basic.addTextArea(name,label,5,60,10,10+70*line);
-        line += 6;
-        if(numField%2!=0) numField++;
+        if(checkExists(name)==null){
+            basic.addTextArea(name,label,5,60,10,10+70*line);
+            textList.add(name);
+            line += 6;
+            if(numField%2!=0) numField++;
+        }else{
+            throw new RuntimeException("Text Area Name: "+name+" has exist.");
+        }
+
     }
 
+    public Object readField(String name) throws RuntimeException{
 
+        Type type=checkExists(name);
+        Boolean nameFound=true;
+        if(type==null) nameFound=false;
+        if(!nameFound) throw new RuntimeException("Name "+name+" not found.");
+        String data = basic.readString(name+"Input");
+        if(checkFormat(name,type)){
+            try{
+                switch(type){
+                    case DATE:case TIME:
+                        return ((SimpleDateFormat)type.getFormat()).parse(data);
+                    case INTEGER:case CURRENCY:case DECIMAL:case PERCENT:
+                        return ((NumberFormat)type.getFormat()).parse(data);
+                    case STRING:
+                        return data;
+                    default:
+                        throw new RuntimeException("Type "+type.toString()+" does not defined");
+                }
+            }catch(ParseException e){
+                System.err.println(e.getMessage());
+            }
+        }
+        return null;
+    }
+
+    public String readText(String name){
+        if(checkValidation()){
+            if(checkExists(name)== Type.TEXT){
+                String result="";
+                while(true){
+                    Character c = basic.readC(name);
+                    if(basic.isEOF()) break;
+                    result += c;
+
+                }
+                basic.clear(name);
+                return result;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Get the Type of specific TextField or TextArea
+     * @param name: name of TextField or TextArea
+     * @return Type if exist, else null
+     */
+    public Type getType(String name){
+        return checkExists(name);
+    }
     /**
      * Check the input format's validation
      * @param name: specific field name
@@ -218,18 +280,34 @@ public class CheckedForm extends BasicForm{
         basic.setLabel(name+"Output","");
     }
 
-    private boolean nameFound;
-    private boolean typeChecked;
+    /**
+     * Check whether the name is in the form
+     * @param name: field name
+     * @return field Type if exists, else return null
+     */
+    private Type checkExists(String name){
+        nameFound = null;
+        typeChecked = null; //initialization
+
+        for(Field tmp:fieldList){
+            if(name.equals(tmp.getName())) return tmp.getType();
+        }
+        for(String tmp:textList){
+            if(name.equals(tmp)) return Type.TEXT;
+        }
+        return null;
+    }
+
 
     /**
      * Check whether the name and type pair exists in the basic form
-     * @param name:
-     * @param type
-     * @return
+     * @param name: name of field
+     * @param type: Type of field
+     * @return true if exists and pair correctly,else false
      */
     private boolean checkExists(String name,Type type) {    //this will set bool to nameFound, and typeChecked
-        nameFound = false;
-        typeChecked = false;   //initialization
+        nameFound = null;
+        typeChecked = null;   //initialization
         for (Field tmp : fieldList) {
             if (tmp.getName().equalsIgnoreCase(name)) {
                 nameFound = true;
@@ -239,6 +317,9 @@ public class CheckedForm extends BasicForm{
                 }
             }
         }
+
+        if(nameFound == null) nameFound=false;
+        if(typeChecked == null) typeChecked=false;
         return false;
     }
 
@@ -249,15 +330,18 @@ public class CheckedForm extends BasicForm{
      * @param type: field type
      */
     private void addEmptyField(String name,String label,Type type){
-        int x;
-        if(numField%2==0) x=260;
-        else {
-            x=10;
-            line++;
-        }
-        basic.addTextField(name+"Input",label,20,x,10+70*(line-1));
-        basic.addLabel(name+"Output","                                 ",x,10+70*(line-1)+30);
-        numField++;
-        fieldList.add(new Field(name,type));
+        if(checkExists(name)==null){
+            int x;
+            if(numField%2==0) x=260;
+            else {
+                x=10;
+                line++;
+            }
+            basic.addTextField(name+"Input",label,20,x,10+70*(line-1));
+            basic.addLabel(name+"Output","                                 ",x,10+70*(line-1)+30);
+            numField++;
+            fieldList.add(new Field(name,type));
+        }else throw new RuntimeException("Field Name: "+name+" has exists.");
+
     }
 }

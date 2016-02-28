@@ -2,6 +2,7 @@
   <library name="BasicIO">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/TestMyForm/lib/BasicIO.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TestMyForm/lib/Forms.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
