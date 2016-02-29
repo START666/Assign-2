@@ -1,6 +1,5 @@
 package acme;
 
-
 import BasicIO.ASCIIDataFile;
 import Forms.CheckedForm.Type;
 

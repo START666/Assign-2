@@ -1,13 +1,5 @@
 package Forms;
 
-/**
- * COSC 2P05 Assignment #2 Part A
- * Reference:
- *     1. java.text.*: From Java Library, used to get each format and ParseException
- *     2. java.util.*: From Java Library, used to create ArrayList and set Locale
- *     3. BasicIO.*: From Brock package, used to create BasicForm
- * Created by Xuhao Chen on 16/2/25.
- */
 import BasicIO.BasicForm;
 
 import java.text.Format;
@@ -17,6 +9,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
+/**
+ * COSC 2P05 Assignment #2 Part A
+ * Reference:
+ *     1. java.text.*: From Java Library, used to get each format and ParseException
+ *     2. java.util.*: From Java Library, used to create ArrayList and set Locale
+ *     3. BasicIO.*: From Brock package, used to create BasicForm
+ * Created by Xuhao Chen on 16/2/25.
+ */
 
 public class CheckedForm extends BasicForm{
 
@@ -85,6 +85,12 @@ public class CheckedForm extends BasicForm{
         basic.hide();
     }
 
+    /**
+     * Override accept()
+     * @return -1 when at least 1 field is invalid,
+     *          0 when all field is valid,
+     *          1 when quit pressed.
+     */
     @Override
     public int accept(){
         int button = basic.accept();
@@ -110,9 +116,11 @@ public class CheckedForm extends BasicForm{
     public void writeString(String name, String text){
         basic.writeString(name,text);
     }
+
     public void writeField(String name,String text){
         basic.writeString(name+"Input",text);
     }
+
     public void writeArea(String name,String text){
         basic.writeString(name,text);
     }
@@ -174,7 +182,6 @@ public class CheckedForm extends BasicForm{
     }
 
     public Object readField(String name) throws RuntimeException{
-
         Type type=checkExists(name);
         Boolean nameFound=true;
         if(type==null) nameFound=false;
@@ -292,7 +299,6 @@ public class CheckedForm extends BasicForm{
             if(!v) return false;
         }
         return true;
-
     }
 
     /**

@@ -1,6 +1,5 @@
 package acme;
 
-
 import BasicIO.ASCIIDataFile;
 import BasicIO.ASCIIOutputFile;
 import Forms.CheckedForm;
@@ -72,7 +71,6 @@ public class AcmeDistribution {
 
                 button = form.accept();
                 if (button==-1) continue;  //if form input is invalid
-                if (button==1) break;  //when user press Quit
 
                 //if form input is valid
                 try{
@@ -88,6 +86,7 @@ public class AcmeDistribution {
                     button=1;
                     break;
                 }
+                if (button==1) break;  //when user press Quit
 
             }
             if (button==-2) continue; //when queue is empty, which means the Type read from file is invalid
@@ -98,27 +97,22 @@ public class AcmeDistribution {
         int count=0;
         form.hide();
         while(true){
-
             try {
                 writeResult();   //save queue to file
                 break;
             }catch(NullPointerException e){   //user press cancel when saving file
                 int confirm = showConfirmDialog(null, "Are you sure want to close without saving?","Close without saving",YES_NO_OPTION);  //Prompt a confirm dialog
-                if(confirm==1) continue;  //  if user choose No, let user to save the file again
-                else break;
+                if(confirm!=1)  break;
             }catch(Exception e2){   //Other Unexpected Exception Appears when saving file
                 count++;
                 if(count<=5){
                     System.err.println("Unexpected Exception, Please re-save file.");
                     showMessageDialog(null,"Unexpected Exception Appears when saving file, Please re-save file.");
-                    continue;
                 }else{
                     System.err.println("Unexpected Exception: Fail to save file more than 5 times.");
                     int fail = showConfirmDialog(null,"Sorry, fail to save file. Program cannot resolve this problem. Press Ok to force quit, cancel to retry","Fail to save",OK_CANCEL_OPTION);
-                    if(fail==1) continue;
-                    else break;
+                    if(fail==1)  break;
                 }
-
             }
         }
 
