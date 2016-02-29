@@ -26,19 +26,16 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public Date getDate(){return date;}
+    /**
+     * All methods below will return a String in Format of each Type
+     */
 
     public String getDateString(){
-
         return ((SimpleDateFormat) CheckedForm.Type.DATE.getFormat()).format(date);
-
     }
 
-    public Date getTime(){return time;}
     public String getTimeString(){
-
         return ((SimpleDateFormat) CheckedForm.Type.TIME.getFormat()).format(time);
-
     }
 
     public String getOrderNum(){
@@ -49,7 +46,6 @@ public class Order {
         return itemNum;
     }
 
-    public Number getQuantity(){return quantity;}
     public String getQuantityString(){
         return quantity.toString();
     }

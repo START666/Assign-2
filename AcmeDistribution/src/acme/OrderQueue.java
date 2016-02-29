@@ -24,32 +24,39 @@ public class OrderQueue {
 
     private ASCIIDataFile input;
 
-    private BlockingQueue<Order> queue;
-    private final Integer capacity = 100000;
+    private BlockingQueue<Order> queue;  //store order of each file
+    private final Integer capacity = 100000;  //set maximum capacity of each file
 
-    private Date date;
-    private Date time;
-    private String orderNum;
-    private String itemNum;
-    private Number quantity;
+    private boolean fileRead;  //whether file read successfully
 
-    private boolean fileRead;
-
-    public OrderQueue(){
+    public OrderQueue(){   //create an empty OrderQueue
         queue = new ArrayBlockingQueue<Order>(capacity);
     }
 
-    public OrderQueue(ASCIIDataFile input){
+    public OrderQueue(ASCIIDataFile input){   //create an OrderQueue from ASCIIDataFile
         this.input = input;
         queue = new ArrayBlockingQueue<Order>(capacity);
         fileRead = readOrder();
     }
 
+    /**
+     * get status of reading file
+     * @return true when reading file successfully, false when input is invalid
+     */
     public boolean isRead(){
         return fileRead;
     }
 
+    /**
+     * read each order from ASCIIDataFile and store them into queue
+     * @return true when read successfully, false when input is invalid
+     */
     private boolean readOrder(){
+        Date date;
+        Date time;
+        String orderNum;
+        String itemNum;
+        Number quantity;
         try{
             while (true) {
                 String tmp = input.readString();
@@ -60,14 +67,13 @@ public class OrderQueue {
                 itemNum = makeString(input.readString());
                 quantity = makeInteger(input.readString());
 
-                Order order = new Order(date,time,orderNum,itemNum,quantity);
-                queue.add(order);
+                queue.add(new Order(date,time,orderNum,itemNum,quantity));
             }
             return true;
-        }catch(ParseException e){
+        }catch(ParseException e){            //when Format is invalid
             System.err.println(e.getMessage());
             return false;
-        }catch(IllegalStateException e2){
+        }catch(IllegalStateException e2){    //when queue is full
             System.err.println("IllegalStateException: Queue is full");
             throw e2;
         }
