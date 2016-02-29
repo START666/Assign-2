@@ -1,5 +1,13 @@
-package form;
+package Forms;
 
+/**
+ * COSC 2P05 Assignment #2 Part A
+ * Reference:
+ *     1. java.text.*: From Java Library, used to get each format and ParseException
+ *     2. java.util.*: From Java Library, used to create ArrayList and set Locale
+ *     3. BasicIO.*: From Brock package, used to create BasicForm
+ * Created by Xuhao Chen on 16/2/25.
+ */
 import BasicIO.BasicForm;
 
 import java.text.Format;
@@ -9,10 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Locale;
 
-/**
- * This is a CheckedForm which would be in Forms library package
- * Created by START_Eric on 16/2/25.
- */
+
 public class CheckedForm extends BasicForm{
 
     private BasicForm basic;
@@ -71,6 +76,16 @@ public class CheckedForm extends BasicForm{
     }
 
     @Override
+    public void show(){
+        basic.show();
+    }
+
+    @Override
+    public void hide(){
+        basic.hide();
+    }
+
+    @Override
     public int accept(){
         int button = basic.accept();
         if(button == 1) return 1;
@@ -89,6 +104,22 @@ public class CheckedForm extends BasicForm{
     @Override
     public void clearAll(){
         basic.clearAll();
+    }
+
+    @Override
+    public void writeString(String name, String text){
+        basic.writeString(name,text);
+    }
+    public void writeField(String name,String text){
+        basic.writeString(name+"Input",text);
+    }
+    public void writeArea(String name,String text){
+        basic.writeString(name,text);
+    }
+
+    public void showMessage(String name,String message){
+        basic.clear(name);
+        basic.writeString(name,message);
     }
 
     /**
@@ -248,7 +279,7 @@ public class CheckedForm extends BasicForm{
      *
      * @return true if all fields are valid
      */
-    private boolean checkValidation(){
+    public boolean checkValidation(){
         ArrayList<Boolean> validation = new ArrayList<Boolean>();
         boolean valid;
         for (Field tmp : fieldList) {

@@ -1,8 +1,8 @@
 package form;
 
 /**
- * This is a test of Assignment #2 of COSC 2P05
- * Created by START_Eric on 16/2/25.
+ * This is a test of Assignment #2 Part A of COSC 2P05
+ * Created by Xuhao Chen on 16/2/25.
  */
 
 public class TestMyForm {
