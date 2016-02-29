@@ -56,6 +56,7 @@ public class OrderQueue {
         String orderNum;
         String itemNum;
         Number quantity;
+        String address;
         try{
             while (true) {
                 String tmp = input.readString();
@@ -65,8 +66,9 @@ public class OrderQueue {
                 orderNum = makeString(input.readString());
                 itemNum = makeString(input.readString());
                 quantity = makeInteger(input.readString());
-
-                queue.add(new Order(date,time,orderNum,itemNum,quantity));
+                address = readAddress();
+                System.out.println("add to queue");
+                queue.add(new Order(date,time,orderNum,itemNum,quantity,address));
             }
             return true;
         }catch(ParseException e){            //when Format is invalid
@@ -76,6 +78,22 @@ public class OrderQueue {
             System.err.println("IllegalStateException: Queue is full");
             throw e2;
         }
+    }
+
+    private String readAddress(){
+        String result="";
+        while(true){
+            Character c = input.readC();
+            System.out.println("ASCII: "+(int)c);
+            if((int)c==10) break;
+            if((int)c==92){
+                Character next = input.readC();
+                System.out.println("ASCII: "+(int)next);
+                if((int)next==110) c=(char)10;
+            }
+            result += c;
+        }
+        return result;
     }
 
     public Order pollOrder(){

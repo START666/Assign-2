@@ -5,17 +5,17 @@
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Forms:jar" />
+      <artifact name="AcmeDistribution:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db56650e-cd23-4809-9584-2b038fa8d16a" name="Default" comment="Last commit,&#10;Project Finished.&#10;&#10;Date: Feb. 29 2016&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA">
+    <list default="true" id="db56650e-cd23-4809-9584-2b038fa8d16a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/AcmeDistribution_jar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java" afterPath="$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java" afterPath="$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java" />
     </list>
     <ignored path="Assign-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -53,8 +53,8 @@
       <file leaf-file-name="AcmeDistribution.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13454075">
-              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.27166882">
+              <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,19 +66,19 @@
         <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#960#961#0" expanded="true" />
                 <element signature="e#1054#1055#0" expanded="true" />
                 <element signature="e#1426#1427#0" expanded="true" />
                 <element signature="e#1457#1458#0" expanded="true" />
-                <element signature="e#2623#2624#0" expanded="true" />
-                <element signature="e#2660#2661#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-                <element signature="e#2733#2734#0" expanded="true" />
-                <element signature="e#2764#2765#0" expanded="true" />
-                <element signature="e#2802#2803#0" expanded="true" />
+                <element signature="e#3212#3213#0" expanded="true" />
+                <element signature="e#3249#3250#0" expanded="true" />
+                <element signature="e#3288#3289#0" expanded="true" />
+                <element signature="e#3322#3323#0" expanded="true" />
+                <element signature="e#3353#3354#0" expanded="true" />
+                <element signature="e#3391#3392#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,18 +88,21 @@
         <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
               <folding>
-                <element signature="e#800#801#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#926#927#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1050#1051#0" expanded="true" />
-                <element signature="e#1081#1082#0" expanded="true" />
-                <element signature="e#1114#1115#0" expanded="true" />
-                <element signature="e#1144#1145#0" expanded="true" />
-                <element signature="e#1184#1185#0" expanded="true" />
-                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#874#875#0" expanded="true" />
+                <element signature="e#964#965#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1090#1091#0" expanded="true" />
+                <element signature="e#1124#1125#0" expanded="true" />
+                <element signature="e#1155#1156#0" expanded="true" />
+                <element signature="e#1188#1189#0" expanded="true" />
+                <element signature="e#1218#1219#0" expanded="true" />
+                <element signature="e#1258#1259#0" expanded="true" />
+                <element signature="e#1300#1301#0" expanded="true" />
+                <element signature="e#1333#1334#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="300" column="20" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+              <caret line="208" column="40" selection-start-line="208" selection-start-column="40" selection-end-line="208" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2194#2195#0" expanded="true" />
@@ -162,10 +165,10 @@
         <option value="$PROJECT_DIR$/TestMyForm/src/form/Type.java" />
         <option value="$PROJECT_DIR$/TestMyForm/src/form/CheckedForm.java" />
         <option value="$PROJECT_DIR$/Forms/src/form/CheckedForm.java" />
-        <option value="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" />
-        <option value="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" />
         <option value="$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java" />
+        <option value="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" />
         <option value="$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java" />
+        <option value="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" />
         <option value="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" />
       </list>
     </option>
@@ -383,6 +386,24 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assign-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assign-2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AcmeDistribution" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="acme" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -396,10 +417,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/codeResource/Brock_packages/BasicIO.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
@@ -909,7 +930,7 @@
       <workItem from="1456461105177" duration="58000" />
       <workItem from="1456461208123" duration="35332000" />
       <workItem from="1456557473728" duration="970000" />
-      <workItem from="1456607921821" duration="43762000" />
+      <workItem from="1456607921821" duration="52593000" />
     </task>
     <task id="LOCAL-00001" summary="Test CheckedForm&#10;@Override: accept(), close()">
       <created>1456423056706</created>
@@ -959,11 +980,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456735364730</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Debug:&#10;    1. Last Record Lost when press Quit.&#10;    2. All Warning Checked&#10;Project Finished.&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA">
+      <created>1456736604704</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1456736604704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83540000" />
+    <option name="totallyTimeSpent" value="92371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -982,10 +1009,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33061224" sideWeight="0.42490843" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.54395604" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.54639804" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.45604396" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28265306" sideWeight="0.4004884" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.45360196" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28265306" sideWeight="0.3986569" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21245421" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1025,7 +1052,8 @@
     <MESSAGE value="Almost done, &#10;adding comments and debugging to AcmeDistribution.java" />
     <MESSAGE value="Comment added&#10;Checking Warnings" />
     <MESSAGE value="Last commit,&#10;Project Finished.&#10;&#10;Date: Feb. 29 2016&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Last commit,&#10;Project Finished.&#10;&#10;Date: Feb. 29 2016&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
+    <MESSAGE value="Debug:&#10;    1. Last Record Lost when press Quit.&#10;    2. All Warning Checked&#10;Project Finished.&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;    1. Last Record Lost when press Quit.&#10;    2. All Warning Checked&#10;Project Finished.&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1197,45 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#890#891#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1144#1145#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1226#1227#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1054#1055#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
-            <element signature="e#2623#2624#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2764#2765#0" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1249,7 +1238,7 @@
     <entry file="file://$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="300" column="20" selection-start-line="300" selection-start-column="20" selection-end-line="300" selection-end-column="20" />
+          <caret line="208" column="40" selection-start-line="208" selection-start-column="40" selection-end-line="208" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2194#2195#0" expanded="true" />
@@ -1270,10 +1259,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#964#965#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1090#1091#0" expanded="true" />
+            <element signature="e#1124#1125#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+            <element signature="e#1188#1189#0" expanded="true" />
+            <element signature="e#1218#1219#0" expanded="true" />
+            <element signature="e#1258#1259#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#960#961#0" expanded="true" />
+            <element signature="e#1054#1055#0" expanded="true" />
+            <element signature="e#1426#1427#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3249#3250#0" expanded="true" />
+            <element signature="e#3288#3289#0" expanded="true" />
+            <element signature="e#3322#3323#0" expanded="true" />
+            <element signature="e#3353#3354#0" expanded="true" />
+            <element signature="e#3391#3392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13454075">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.27166882">
+          <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

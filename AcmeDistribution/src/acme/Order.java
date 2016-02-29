@@ -18,13 +18,15 @@ public class Order {
     public String orderNum;
     public String itemNum;
     public Number quantity;
+    public String address;
 
-    public Order(Date date,Date time,String orderNum,String itemNum,Number quantity){
+    public Order(Date date,Date time,String orderNum,String itemNum,Number quantity,String address){
         this.date = date;
         this.time = time;
         this.orderNum = orderNum;
         this.itemNum = itemNum;
         this.quantity = quantity;
+        this.address = address;
     }
 
     /**
@@ -49,6 +51,10 @@ public class Order {
 
     public String getQuantityString(){
         return quantity.toString();
+    }
+
+    public String getAddress(){
+        return address;
     }
 
 

@@ -79,6 +79,7 @@ public class AcmeDistribution {
                     order.orderNum = (String) form.readField("order");
                     order.itemNum = (String) form.readField("item");
                     order.quantity = (Number) form.readField("quantity");
+                    order.address = form.readText("address");
 
                     totalOrder.addOrder(order);
                 }catch(Exception e){
@@ -133,9 +134,25 @@ public class AcmeDistribution {
             output.writeString(order.getOrderNum());
             output.writeString(order.getItemNum());
             output.writeString(order.getQuantityString());
+            output.writeString(getAddressString(order));
             output.newLine();
 
         }
+    }
+
+    private String getAddressString(Order order){
+        String address=order.getAddress();
+        String result="";
+        for(Character c : address.toCharArray()){
+            if((int)c==10){
+                result += (char)92;
+                result += (char)110;
+            }else{
+                result += c;
+            }
+        }
+        result = result.trim();
+        return result;
     }
 
     /**
@@ -148,6 +165,7 @@ public class AcmeDistribution {
         form.writeField("order", order.getOrderNum());
         form.writeField("item", order.getItemNum());
         form.writeField("quantity", order.getQuantityString());
+        form.writeArea("address",order.getAddress());
     }
 
     private void buildForm(){
