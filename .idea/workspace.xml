@@ -9,18 +9,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db56650e-cd23-4809-9584-2b038fa8d16a" name="Default" comment="Almost done, &#10;adding comments and debugging to AcmeDistribution.java">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/START_Eric.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Forms.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/AcmeDistribution.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Forms/src/form/CheckedForm.java" afterPath="$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="db56650e-cd23-4809-9584-2b038fa8d16a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Forms/Forms.iml" afterPath="$PROJECT_DIR$/Forms/Forms.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java" afterPath="$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java" />
     </list>
     <ignored path="Assign-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -876,7 +866,7 @@
       <workItem from="1456461105177" duration="58000" />
       <workItem from="1456461208123" duration="35332000" />
       <workItem from="1456557473728" duration="970000" />
-      <workItem from="1456607921821" duration="41775000" />
+      <workItem from="1456607921821" duration="41803000" />
     </task>
     <task id="LOCAL-00001" summary="Test CheckedForm&#10;@Override: accept(), close()">
       <created>1456423056706</created>
@@ -908,11 +898,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456639787551</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Almost done, &#10;adding comments and debugging to AcmeDistribution.java">
+      <created>1456734505646</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1456734505646</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81553000" />
+    <option name="totallyTimeSpent" value="81581000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
