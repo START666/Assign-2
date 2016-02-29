@@ -10,12 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db56650e-cd23-4809-9584-2b038fa8d16a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/AcmeDistribution_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AcmeDistribution/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/Order.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" afterPath="$PROJECT_DIR$/AcmeDistribution/src/acme/OrderQueue.java" />
     </list>
     <ignored path="Assign-2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestMyForm.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestMyForm.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state vertical-scroll-proportion="0.60155237">
+              <caret line="31" column="64" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AcmeDistribution.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AcmeDistribution.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27166882">
+            <state vertical-scroll-proportion="0.0">
               <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -112,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="208" column="40" selection-start-line="208" selection-start-column="40" selection-end-line="208" selection-end-column="40" />
+              <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2194#2195#0" expanded="true" />
@@ -930,7 +925,7 @@
       <workItem from="1456461105177" duration="58000" />
       <workItem from="1456461208123" duration="35332000" />
       <workItem from="1456557473728" duration="970000" />
-      <workItem from="1456607921821" duration="52593000" />
+      <workItem from="1456607921821" duration="53257000" />
     </task>
     <task id="LOCAL-00001" summary="Test CheckedForm&#10;@Override: accept(), close()">
       <created>1456423056706</created>
@@ -986,11 +981,17 @@
       <option name="project" value="LOCAL" />
       <updated>1456736604704</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Bug Fixed.&#10;    1. No Address&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA">
+      <created>1456745750109</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1456745750109</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92371000" />
+    <option name="totallyTimeSpent" value="93035000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1009,10 +1010,10 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.497558" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33061224" sideWeight="0.42490843" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.54639804" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.54884005" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.45360196" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28265306" sideWeight="0.3986569" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18265305" sideWeight="0.45115995" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28265306" sideWeight="0.3968254" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21245421" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1053,7 +1054,8 @@
     <MESSAGE value="Comment added&#10;Checking Warnings" />
     <MESSAGE value="Last commit,&#10;Project Finished.&#10;&#10;Date: Feb. 29 2016&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
     <MESSAGE value="Debug:&#10;    1. Last Record Lost when press Quit.&#10;    2. All Warning Checked&#10;Project Finished.&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug:&#10;    1. Last Record Lost when press Quit.&#10;    2. All Warning Checked&#10;Project Finished.&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
+    <MESSAGE value="Bug Fixed.&#10;    1. No Address&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug Fixed.&#10;    1. No Address&#10;&#10;Commit Date: Feb. 29 2016&#10;Due: Feb. 29 2016 10:00 am&#10;Author: Xuhao Chen&lt;xc12lw@brocku.ca&gt;&#10;IDE: Intellij IDEA" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1225,20 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Forms/src/Forms/CheckedForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="208" column="40" selection-start-line="208" selection-start-column="40" selection-end-line="208" selection-end-column="40" />
+          <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2194#2195#0" expanded="true" />
@@ -1303,8 +1295,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AcmeDistribution/src/acme/AcmeDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27166882">
+        <state vertical-scroll-proportion="0.0">
           <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestMyForm/src/form/TestMyForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.60155237">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
